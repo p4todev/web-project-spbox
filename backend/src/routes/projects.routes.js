@@ -3,10 +3,11 @@ const route = express.Router();
 
 const Projects = require('../models/projects');
 
+
+//obtener datos de proyectos
 route.get('/', async (req, res)=>{
     try{
         const projects = await Projects.find();
-        console.log(projects);
         res.json(projects);
 
     }catch{
@@ -14,6 +15,7 @@ route.get('/', async (req, res)=>{
     }
 });
 
+//subir proyecto
 route.post('/', async (req,res)=>{
     
     const {nombreCliente,fechaEjecucion,resumen} = req.body;

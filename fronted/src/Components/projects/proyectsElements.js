@@ -20,7 +20,7 @@ export const ProjectsDisplay = styled.div`
     margin : 0 auto;
     display : grid;
     grid-template-columns : 1fr 1fr 1fr;
-    padding : 1rem;
+    padding : .6rem;
     overflow: hidden;
     gap : 1rem;
 
@@ -32,8 +32,7 @@ export const ProjectsDisplay = styled.div`
 
 export const Item = styled.div`
     height : 250px;
-    width : 300px;
-    margin : 10px 0;
+    
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition : all .2s ease-in;
 `
@@ -86,9 +85,9 @@ export const ItemDescrip = styled.p`
 export const ItemBtn = styled(LinkR)`
     padding : .6rem;
     width : 150px;
-    background : #1D3557; 
+    background : #fff; 
     text-align: center;
-    color : #fff;
+    color : #1D3557;
     position : absolute;
     left : 0;
     right : 0;
@@ -97,8 +96,8 @@ export const ItemBtn = styled(LinkR)`
     border : 1px solid #1D3557;
 
     &:hover{
-        color: #1D3557;
-        background : #fff;
+        color: #fff;
+        background : #1D3557;
         transition : all .2s ease-in;
     }
 

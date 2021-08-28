@@ -52,12 +52,12 @@ const Projects = props => {
                 {proyectos.slice(0,visible).map((proyecto)=>{
                     return(
                         <>
-                        <Item>
+                        <Item className="projects--item">
                             <ItemContent>
                                 <ItemTitle>{proyecto.nombreCliente}</ItemTitle>
                                 <ItemDate>{proyecto.fechaEjecucion}</ItemDate>
                                 <ItemDescrip>{proyecto.resumen}</ItemDescrip>
-                                <ItemBtn id={proyecto._id}>Ver mas</ItemBtn>
+                                <ItemBtn id={proyecto._id}>Conocer</ItemBtn>
                             </ItemContent>
                         </Item>
                         </>

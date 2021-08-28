@@ -13,6 +13,7 @@ import {
     
 } from './infoElements'
 
+
 const HeroSection = ({
     id,
     blueBg,
@@ -22,14 +23,15 @@ const HeroSection = ({
     descrip,
     img
 }) => {
+
     return (
         <>
-            <InfoContainer id='about' BlueBg={blueBg}>
+            <InfoContainer id={id} BlueBg={blueBg}>
                 <InfoWrapper>
-                    <InfoRow ImgStart={imgStart}>
+                    <InfoRow  ImgStart={imgStart}>
                         <Column1>
                         <TextWrapper>
-                            <Title DarkText={darkText}>{titulo}</Title>
+                            <Title  DarkText={darkText}>{titulo}</Title>
                             <Subtitle DarkText={darkText}>{descrip}</Subtitle>
                         </TextWrapper>
                         </Column1>
